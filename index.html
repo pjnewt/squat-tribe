@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squat Tribe</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="home">
+  <h1>Squat Tribe</h1>
+  <button onclick="startSession()">Start Session</button>
+  <button onclick="installApp()">Install App</button>
+</div>
+
+<div id="session" style="display:none;">
+  <h2 id="phase">READY</h2>
+  <div>Reps: <span id="reps">0</span></div>
+  <button onclick="startSet()">Start</button>
+  <button onclick="stopSet()">Stop</button>
+  <button onclick="goHome()">Home</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
